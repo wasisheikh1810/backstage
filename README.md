@@ -44,7 +44,7 @@ If you need to update `npm`, you can make it using `npm`! After running the foll
 
     $ npm install -g yarn
 
-# Now Create your Backstage App
+# Create your Backstage App
 To install the Backstage Standalone app, we make use of npx, a tool to run Node executables straight from the registry. This tool is part of your Node.js installation. Running the command below will install Backstage. The wizard will create a subdirectory inside your current working directory.
 
     $ npx @backstage/create-app
