@@ -53,19 +53,19 @@ To install the Backstage Standalone app, we make use of npx, a tool to run Node 
     $ yarn dev
     $ yarn build
     
--It might take a little while, but as soon as the message [0] webpack compiled successfully appears, you can open a browser and directly navigate to your freshly installed Backstage portal at http://localhost:3000. You can start exploring the demo immediately. Please note that the in-memory database will be cleared when you restart the app
+- It might take a little while, but as soon as the message [0] webpack compiled successfully appears, you can open a browser and directly navigate to your freshly installed Backstage portal at http://localhost:3000. You can start exploring the demo immediately. Please note that the in-memory database will be cleared when you restart the app
 
--after the yarn build command all the files are build convinently and after we need to dockerize the app as the command has build all the file it also included the dockerfile as well so we will first install the docker if we dont have it after that we need to run the build command 
+- after the yarn build command all the files are build convinently and after we need to dockerize the app as the command has build all the file it also included the dockerfile as well so we will first install the docker if we dont have it after that we need to run the build command 
 
     $ docker image build . -f packages/backend/Dockerfile --tag backstage
--we will get a message as 
+- we will get a message as 
 Successfully built 3a40b870bc44
 Successfully tagged backstage:latest
 
     $ docker images
     for all the iamges we have build 
     
-After this we need to login into the GCP and deploy our app through the GKE
+- After this we need to login into the GCP and deploy our app through the GKE
 #for this we first need to create an GCP account and create kubernetes cluster and login into it
     Before you begin
 If you want to use the command-line do the following:
@@ -79,7 +79,7 @@ Set a default region and zone.
    $ gcloud config set account `ACCOUNT`
    $ gcloud config set project test1-project
 
-after the login tnto the gke cluster, run the command to apply kubernetes
+- after the login tnto the gke cluster, run the command to apply kubernetes
     $ kubectl create namespace backstage
 {this is to create a namecspace in the cluster}
 
