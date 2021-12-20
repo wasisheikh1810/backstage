@@ -1,37 +1,30 @@
-# backstage
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
-
-#DESCRIPTION
+# DESCRIPTION
 A demo project for open platform for building developer portals {build in nodjs} 
 
-## Requirements
+# Requirements
 
 For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
 
 
-#OVERWRITE
+# OVERWRITE
 Deploy Backstage Standalone with npm packages
 Run Backstage Standalone with a PSQLite in-memory database and demo content
 
 
-### Node
-- #### Node installation on Windows
+# Install Node
+- Node installation on Windows
 
   Just go on [official Node.js website](https://nodejs.org/) and download the installer.
 Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
-- #### Node installation on Ubuntu
+- Node installation on Ubuntu
 
   You can install nodejs and npm easily with apt install, just run the following commands.
 
       $ sudo apt install nodejs
       $ sudo apt install npm
       $ node use 16.5.0
-- #### Other Operating Systems
+-  Other Operating Systems
   You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
 If the installation was successful, you should be able to run the following command.
@@ -46,7 +39,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
     $ npm install npm -g
 
-### Yarn installation
+# Yarn installation
   After installing node, this project will need yarn too, so just run the following command.
 
     $ npm install -g yarn
@@ -60,12 +53,12 @@ To install the Backstage Standalone app, we make use of npx, a tool to run Node 
     $ yarn dev
     $ yarn build
     
-##It might take a little while, but as soon as the message [0] webpack compiled successfully appears, you can open a browser and directly navigate to your freshly installed Backstage portal at http://localhost:3000. You can start exploring the demo immediately. Please note that the in-memory database will be cleared when you restart the app
+-It might take a little while, but as soon as the message [0] webpack compiled successfully appears, you can open a browser and directly navigate to your freshly installed Backstage portal at http://localhost:3000. You can start exploring the demo immediately. Please note that the in-memory database will be cleared when you restart the app
 
-##after the yarn build command all the files are build convinently and after we need to dockerize the app as the command has build all the file it also included the dockerfile as well so we will first install the docker if we dont have it after that we need to run the build command 
+-after the yarn build command all the files are build convinently and after we need to dockerize the app as the command has build all the file it also included the dockerfile as well so we will first install the docker if we dont have it after that we need to run the build command 
 
     $ docker image build . -f packages/backend/Dockerfile --tag backstage
-#we will get a message as 
+-we will get a message as 
 Successfully built 3a40b870bc44
 Successfully tagged backstage:latest
 
@@ -79,7 +72,7 @@ If you want to use the command-line do the following:
 Install or update to the latest version of the gcloud command-line tool.
 Set a default region and zone.
 
-#to initialize the command in gcloud:
+# To initialize the command in Gcloud:
    $ gcloud init [--console-only] [GCLOUD_WIDE_FLAG …]
 
    $ gcloud auth login
