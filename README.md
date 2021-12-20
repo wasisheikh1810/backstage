@@ -1,5 +1,5 @@
 # DESCRIPTION
-A demo project for open platform for building developer portals {build in nodjs} 
+Its a demo project for open platform for building developer portal {build in nodjs} 
 
 # Requirements
 
@@ -35,7 +35,7 @@ If the installation was successful, you should be able to run the following comm
     $ npm --version
     '7.19.1'
     
-If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+If you need to update `npm`, you can make it using `npm`! After running the following command, just open again the command line.
 
     $ npm install npm -g
 
@@ -53,7 +53,7 @@ To install the Backstage Standalone app, we make use of npx, a tool to run Node 
     $ yarn dev
     $ yarn build
     
-- It might take a little while, but as soon as the message [0] webpack compiled successfully appears, you can open a browser and directly navigate to your freshly installed Backstage portal at http://localhost:3000. You can start exploring the demo immediately. Please note that the in-memory database will be cleared when you restart the app
+- It might take a little while, but as soon as the message .Webpack compiled successfully appears, you can open a browser and directly navigate to your freshly installed Backstage portal at http://localhost:3000. You can start exploring the demo immediately. Please note that the in-memory database will be cleared when you restart the app
 
 - after the yarn build command all the files are build convinently and after we need to dockerize the app as the command has build all the file it also included the dockerfile as well so we will first install the docker if we dont have it after that we need to run the build command 
 
